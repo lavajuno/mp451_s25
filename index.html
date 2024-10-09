@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juno Meifert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icons/css/solid.min.css">
+    <link rel="stylesheet" href="icons/css/fontawesome.min.css">
+    <script src="js/navbar.js"></script>
+</head>
+<body>
+    <div class="nav_container">
+        <nav>
+            <span class="expand_button" onclick="navbar_toggle()"><i class="fa-solid fa-bars"></i></span>
+            <a href="#">Home</a>
+            <a href="#software">Software</a>
+            <a href="#maintenance">Maintenance</a>
+            <a href="#talks">Talks</a>
+            <a href="#aroundthelabs">Around the Labs</a>
+        </nav>
+    </div>
+
+    <div class="header_container" alt="Aerial photo of a lake at dusk">
+        <header class="hero">
+            <h1>Juno Meifert</h1>
+            <h2>MP451 for 3 Credits &bull; Fall 2024</h2>
+        </header>
+    </div>
+
+    <main>
+        <section id="software">
+            <header>
+                <h1>Software</h1>
+            </header>
+            <div class="card_container">
+                <article class="card">
+                    <img src="images/mirror.jpg" alt="A screenshot of the new Mirror homepage.">
+                    <header>
+                        <h2>Mirror</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            I wrote a new frontend for our new Mirror that
+                            is a lot smaller and easier to work on.
+                        </p>
+                    </div>
+                    <footer class="right">
+                        <a
+                            class="button"
+                            href="https://github.com/carykees98/mirror"
+                            target="_blank"
+                            referrerpolicy="no-referrer"
+                        >
+                        <i class="fa-solid fa-code-merge"></i> View on Github
+                        </a>
+                    </footer>
+                </article>
+
+                <article class="card">
+                    <img src="images/wg-tui.jpg" alt="A screenshot of a testing version of wg-tui.">
+                    <header>
+                        <h2>wg-tui</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            A TUI tool for managing Wireguard servers. It is
+                            designed to handle all of the manual tasks related
+                            to running a point-to-site VPN, with the ultimate
+                            goal of using it to host our VPN as a backup to the
+                            jump server.
+                        </p>
+                    </div>
+                    <footer class="right">
+                        <a
+                            class="button"
+                            href="https://github.com/lavajuno/wg-tui"
+                            target="_blank"
+                            referrerpolicy="no-referrer"
+                        >
+                            <i class="fa-solid fa-code-merge"></i> View on Github
+                        </a>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <section id="maintenance">
+            <header>
+                <h1>Maintenance</h1>
+            </header>
+            <div class="card_container">
+                <article class="card noimg">
+                    <header>
+                        <h2>Caterpillar</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            I helped set up Caterpillar, our new jump server.
+                            We were able to close many of our firewall holes.
+                            Of course, it something had to go wrong, and
+                            Caterpillar stopped booting. After some BIOS
+                            troubleshooting, I've got it working again.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>IPv6</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            After an unsuccessful attempt last year, I was able
+                            to set up router advertisements, firewall rules,
+                            and routing for IPv6 traffic in the labs. Everyone's
+                            device should have an IPv6 address now.
+                            <br>
+                            <i>
+                                Fun fact: COSI is the only place on the campus
+                                network where IPv6 is set up.
+                            </i>
+                        </p>
+                    </div>
+
+                    <footer class="right">
+                        <a
+                            class="button"
+                            href="https://ipv6test.google.com/"
+                            target="_blank"
+                            referrerpolicy="no-referrer"
+                        >
+                            <i class="fa-solid fa-network-wired"></i> Check IPv6 Connectivity
+                        </a>
+                    </footer>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>COLO Cable Cleanup</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            I bought some velcro cable wraps, made some labels,
+                            and organized all of the cables in our rack in COLO.
+                            Cables are now grouped by purpose (power, KVM,
+                            network, etc.) and network cables are now labelled
+                            by server.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="talks">
+            <header>
+                <h1>Talks</h1>
+            </header>
+            <div class="card_container">
+                <article class="card noimg">
+                    <header>
+                        <h2>Recon Workshop</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            I hosted a workshop focused on network recon, where
+                            we looked at tools like
+                            <a
+                                href="https://nmap.org"
+                                target="_blank"
+                                referrerpolicy="no-referrer"
+                            >nmap</a>,
+                            <a
+                                href="https://github.com/netdiscover-scanner/netdiscover"
+                                target="_blank"
+                                referrerpolicy="no-referrer"
+                            >netdiscover</a>,
+                            <a
+                                href="https://github.com/resurrecting-open-source-projects/nbtscan"
+                                target="_blank"
+                                referrerpolicy="no-referrer"
+                            >nbtscan</a>,
+                            <a
+                                href="https://github.com/lgandx/Responder"
+                                target="_blank"
+                                referrerpolicy="no-referrer"
+                            >responder</a>, and
+                            <a
+                                href="https://www.wireshark.org/"
+                                target="_blank"
+                                referrerpolicy="no-referrer"
+                            >Wireshark</a>.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>SSH - Jumping and forwarding</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            How to use a jump server and forward ports with SSH.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>SSH - Public key auth</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            How to generate a SSH keypair (RSA or ECC) and add
+                            it to your authorized_keys.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>KeepassXC</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            A quick introduction to a free and open source
+                            password manager.
+                        </p>
+                    </div>
+
+                    <footer class="right">
+                        <a
+                            class="button"
+                            href="https://keepassxc.org/"
+                            target="_blank"
+                            referrerpolicy="no-referrer"
+                        >
+                            <i class="fa-solid fa-earth-americas"></i> KeePassXC Website
+                        </a>
+                    </footer>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>HOPE</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            Amity and I spoke about our experience at HOPE XV
+                            and showed a ton of photos from the conference.
+                        </p>
+                    </div>
+                    <footer class="right">
+                        <a
+                            class="button"
+                            href="https://hope.net/"
+                            target="_blank"
+                            referrerpolicy="no-referrer"
+                        >
+                            <i class="fa-solid fa-earth-americas"></i> HOPE Website
+                        </a>
+                    </footer>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>Book</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            A quick introduction to Book and how you can edit
+                            it, as well as a call to join the COSI Github
+                            organization.
+                        </p>
+                    </div>
+                    <footer class="right">
+                        <a
+                            class="button"
+                            href="https://book.cosi.clarkson.edu/"
+                            target="_blank"
+                            referrerpolicy="no-referrer"
+                        >
+                            <i class="fa-solid fa-book"></i> Go to Book
+                        </a>
+                    </footer>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>A Different View on Containers</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            Breaking through the cloud hype and approaching
+                            containerization as a collection of pre-existing
+                            automation and security techniques.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>Running a Tor Relay</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            My experience running a Tor relay and how you can
+                            get started running your own.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>Configuring htop</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            The humble resource monitor (probably already
+                            installed on your machine) that has a lot more to
+                            offer than what appears at first glance.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="aroundthelabs">
+            <header>
+                <h1>Around the Labs</h1>
+            </header>
+            <div class="card_container">
+                <article class="card noimg">
+                    <header>
+                        <h2>Career Fair Kickoff</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            Cary and I talked to employers about COSI at this
+                            semester's career fair kickoff.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>Activities Fair</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            I helped represent COSI at this semester's
+                            activities fair. I talked to new students about
+                            what COSI is like, what projects we have going on,
+                            and how new students can get involved.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="images/cosi-people.jpg" alt="A photo of several people striking silly poses in a computer lab.">
+                    <header>
+                        <h2>Meetings</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            meetings
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card noimg">
+                    <header>
+                        <h2>Cleanup</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            The giant e-waste pile is now gone! Many cables have
+                            also been put away.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>    
+    </main>
+
+    <hr>
+
+    <footer>
+        <article class="card twocol">
+            <ul class="footer_nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#software">Software</a></li>
+                <li><a href="#maintenance">Maintenance</a></li>
+                <li><a href="#talks">Talks</a></li>
+                <li><a href="#aroundthelabs">Around the Labs</a></li>
+            </ul>
+            <section id="copyright" class="footer_info">
+                <h3>Juno Meifert</h3>
+                MP451 for 3 Credits &bull; Fall 2024
+                <br>
+                Clarkson University
+            </section>
+        </article>
+    </footer>
+</body>
+</html>
