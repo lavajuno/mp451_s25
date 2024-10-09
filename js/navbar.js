@@ -6,3 +6,10 @@ function navbar_toggle() {
         nav.classList.add("expanded");
     }
 }
+
+function navbar_close() {
+    const nav = document.querySelector("nav");
+    if(nav.classList.contains("expanded")) {
+        nav.classList.remove("expanded");
+    }
+}
