@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juno Meifert - MP451 - Fall 2024</title>
+    <title>Juno Meifert - MP451 - Spring 2025</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="icons/css/solid.min.css">
     <link rel="stylesheet" type="text/css" href="icons/css/fontawesome.min.css">
@@ -11,23 +11,19 @@
     <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 </head>
 <body>
-    <div class="nav_container">
-        <nav>
-            <span class="expand_button" onclick="navbar_toggle()"><i class="fa-solid fa-bars"></i></span>
-            <a href="#" onclick="navbar_close()">Home</a>
-            <a href="#software" onclick="navbar_close()">Software</a>
-            <a href="#maintenance" onclick="navbar_close()">Maintenance</a>
-            <a href="#talks" onclick="navbar_close()">Talks</a>
-            <a href="#aroundthelabs" onclick="navbar_close()">Around the Labs</a>
-        </nav>
-    </div>
+    <nav>
+        <span class="expand_button" onclick="navbar_toggle()"><i class="fa-solid fa-bars"></i></span>
+        <a href="#" onclick="navbar_close()">Home</a>
+        <a href="#software" onclick="navbar_close()">Software</a>
+        <a href="#maintenance" onclick="navbar_close()">Maintenance</a>
+        <a href="#talks" onclick="navbar_close()">Talks</a>
+        <a href="#aroundthelabs" onclick="navbar_close()">Around the Labs</a>
+    </nav>
 
-    <div class="header_container" alt="Aerial photo of a lake at dusk">
-        <header class="hero">
-            <h1>Juno Meifert</h1>
-            <h2>MP451 for 3 Credits &bull; Fall 2024</h2>
-        </header>
-    </div>
+    <header>
+        <h1>Juno Meifert</h1>
+        <h2>MP451 for 3 Credits &bull; Spring 2025</h2>
+    </header>
 
     <main>
         <section id="software">
@@ -38,16 +34,12 @@
                 <article class="card">
                     <img src="images/mirror.jpg" alt="A screenshot of the new Mirror homepage.">
                     <header>
-                        <h2>* Mirror</h2>
+                        <h2>Mirror</h2>
                     </header>
                     <div class="content">
                         <p>
-                            I wrote a new frontend for our new Mirror that
-                            is a lot smaller and easier to work on.
-                            <br>
-                            * After we got the new Mirror up and running, I
-                            helped fix a lot of bugs and get things like Map and
-                            Grafana working.
+                            I have continued to work on Mirror as we begin to
+                            pass on the project to younger students.
                         </p>
                     </div>
                     <footer class="right">
@@ -63,17 +55,13 @@
                 </article>
 
                 <article class="card">
-                    <img src="images/wg-tui.jpg" alt="A screenshot of a testing version of wg-tui.">
+                    <img src="#" alt="alt">
                     <header>
-                        <h2>wg-tui</h2>
+                        <h2>Software Title</h2>
                     </header>
                     <div class="content">
                         <p>
-                            A TUI tool for managing Wireguard servers. It is
-                            designed to handle all of the manual tasks related
-                            to running a point-to-site VPN, with the ultimate
-                            goal of using it to host our VPN as a backup to the
-                            jump server.
+                            Description
                         </p>
                     </div>
                     <footer class="right">
@@ -97,92 +85,35 @@
             <div class="card_container">
                 <article class="card noimg">
                     <header>
-                        <h2>Caterpillar</h2>
+                        <h2>Title</h2>
                     </header>
                     <div class="content">
                         <p>
-                            I helped set up Caterpillar, our new jump server.
-                            We were able to close many of our firewall holes.
-                            Of course, it something had to go wrong, and
-                            Caterpillar stopped booting. After some BIOS
-                            troubleshooting, I've got it working again.
+                            Description
                         </p>
                     </div>
                 </article>
 
                 <article class="card noimg">
                     <header>
-                        <h2>IPv6</h2>
+                        <h2>Title</h2>
                     </header>
                     <div class="content">
                         <p>
-                            After an unsuccessful attempt last year, I was able
-                            to set up router advertisements, firewall rules,
-                            and routing for IPv6 traffic in the labs. Everyone's
-                            device should have an IPv6 address now.
-                            <br>
-                            <i>
-                                Fun fact: COSI is the only place on the campus
-                                network where IPv6 is set up.
-                            </i>
+                            Description
                         </p>
                     </div>
 
                     <footer class="right">
                         <a
                             class="button"
-                            href="https://ipv6test.google.com/"
+                            href="https://google.com/"
                             target="_blank"
                             referrerpolicy="no-referrer"
                         >
-                            <i class="fa-solid fa-network-wired"></i> Check IPv6 Connectivity
+                            <i class="fa-solid fa-network-wired"></i> Button
                         </a>
                     </footer>
-                </article>
-
-                <article class="card">
-                    <img src="images/colo.jpg" alt="A photo of labelled cables plugged into a network switch.">
-                    <header>
-                        <h2>COLO Cable Cleanup</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            I bought some velcro cable wraps, made some labels,
-                            and organized all of the cables in our rack in COLO.
-                            Cables are now grouped by purpose (power, KVM,
-                            network, etc.) and network cables are now labelled
-                            by server.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>* Hypervisor Management Ports</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            I went down to COLO with a few maintainers to set up
-                            a copper management/fallback link for the new
-                            hypervisors. You can now access them even if the
-                            main fiber link is down.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/new-mirror.png" alt="A screenshot of the new Mirror website.">
-                    <header>
-                        <h2>* New Mirror</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            After Old Mirror's boot SSD failed, I helped our
-                            rescue team rush in New Mirror and get it up and
-                            running. It took a couple days of instability and
-                            quick fixes, but now Mirror is up again.
-                        </p>
-                    </div>
                 </article>
             </div>
         </section>
@@ -192,113 +123,6 @@
                 <h1>Talks</h1>
             </header>
             <div class="card_container">
-                <article class="card noimg">
-                    <header>
-                        <h2>Recon Workshop</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            I hosted a workshop focused on network recon, where
-                            we looked at tools like
-                            <a
-                                href="https://nmap.org"
-                                target="_blank"
-                                referrerpolicy="no-referrer"
-                            >nmap</a>,
-                            <a
-                                href="https://github.com/netdiscover-scanner/netdiscover"
-                                target="_blank"
-                                referrerpolicy="no-referrer"
-                            >netdiscover</a>,
-                            <a
-                                href="https://github.com/resurrecting-open-source-projects/nbtscan"
-                                target="_blank"
-                                referrerpolicy="no-referrer"
-                            >nbtscan</a>,
-                            <a
-                                href="https://github.com/lgandx/Responder"
-                                target="_blank"
-                                referrerpolicy="no-referrer"
-                            >responder</a>, and
-                            <a
-                                href="https://www.wireshark.org/"
-                                target="_blank"
-                                referrerpolicy="no-referrer"
-                            >Wireshark</a>.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>SSH - Jumping and forwarding</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            How to use a jump server and forward ports with SSH.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>SSH - Public key auth</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            How to generate a SSH keypair (RSA or ECC) and add
-                            it to your authorized_keys.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/keepassxc.jpg" alt="A screenshot of the About page of the KeepassXC password manager.">
-                    <header>
-                        <h2>KeepassXC</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            A quick introduction to a free and open source
-                            password manager.
-                        </p>
-                    </div>
-
-                    <footer class="right">
-                        <a
-                            class="button"
-                            href="https://keepassxc.org/"
-                            target="_blank"
-                            referrerpolicy="no-referrer"
-                        >
-                            <i class="fa-solid fa-earth-americas"></i> KeePassXC Website
-                        </a>
-                    </footer>
-                </article>
-
-                <article class="card">
-                    <img src="images/hope.jpg" alt="A photo of several COSI students and alumni at the HOPE conference.">
-                    <header>
-                        <h2>HOPE</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            Amity and I spoke about our experience at HOPE XV
-                            and showed a ton of photos from the conference.
-                        </p>
-                    </div>
-                    <footer class="right">
-                        <a
-                            class="button"
-                            href="https://hope.net/"
-                            target="_blank"
-                            referrerpolicy="no-referrer"
-                        >
-                            <i class="fa-solid fa-earth-americas"></i> HOPE Website
-                        </a>
-                    </footer>
-                </article>
-
                 <article class="card">
                     <img src="images/book.jpg" alt="A screenshot of the cover of the COSI Book">
                     <header>
@@ -322,106 +146,6 @@
                         </a>
                     </footer>
                 </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>A Different View on Containers</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            Breaking through the cloud hype and approaching
-                            containerization as a collection of pre-existing
-                            automation and security techniques.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>Running a Tor Relay</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            My experience running a Tor relay and how you can
-                            get started running your own.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>Configuring htop</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            The humble resource monitor (probably already
-                            installed on your machine) that has a lot more to
-                            offer than what appears at first glance.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2> * psutil</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            A cool python library you can query for information
-                            about your system and its performance.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2> * NUT (impromptu)</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            Network UPS Tools! A very full-featured collection
-                            of utilities that help sysadmins set up redundant
-                            power delivery in datacenters.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2> * Ansible</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            A powerful IT automation tool that we once again are
-                            using at COSI.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2> * Docker (again)</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            Last semester's Docker talk was a hit - by request,
-                            I did it again! I'm flattered that people would want
-                            to listen to my ramblings a second time.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2> * Swap</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            The powerful and effective use of virtual memory
-                            that carries a lot of misinformation around it.
-                        </p>
-                    </div>
-                </article>
             </div>
         </section>
 
@@ -430,136 +154,6 @@
                 <h1>Around the Labs</h1>
             </header>
             <div class="card_container">
-                <article class="card noimg">
-                    <header>
-                        <h2>Career Fair Kickoff</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            I helped represent COSI at this semester's career
-                            fair kickoff. We talked to employers about the labs
-                            and what our students do. IBM's recruiters showed
-                            up to that week's COSI meeting too.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>Activities Fair</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            I helped represent COSI at this semester's
-                            activities fair. I talked to new students about
-                            what COSI is like, what projects we have going on,
-                            and how new students can get involved.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>Presenting to Classes</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            Cary and I presented about COSI to this semester's
-                            CS141 and CS242 classes.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>E-waste Cleanup</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            The giant e-waste pile is now gone! Many cables have
-                            also been put away.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>* Direction</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            Meetings, suprise tours, and <s>annoying Maciel</s>
-                            working with department administration.
-                            <br>
-                            We made a large purchase this semester for repairs,
-                            backup parts, stuff for student projects, and
-                            quality-of-life items.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>* Open Houses</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            I presented about COSI's at Clarkson's open houses
-                            this semester, and talked to prospective students
-                            1-on-1 about what we do and what it's like in the
-                            labs.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>* Whiteboard Project</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            I created a GitHub project where we can track tasks
-                            that aren't related to a specific repository. It's
-                            had a good bit of use since then.
-                        </p>
-                    </div>
-                    <footer class="right">
-                        <a
-                            class="button"
-                            href="https://github.com/orgs/COSI-Lab/projects/4"
-                            target="_blank"
-                            referrerpolicy="no-referrer"
-                        >
-                        <i class="fa-solid fa-code-merge"></i> View on Github
-                        </a>
-                    </footer>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>* Student VMs</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            I helped two students create and manage VMs for
-                            classes this semester.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card noimg">
-                    <header>
-                        <h2>* UPSs</h2>
-                    </header>
-                    <div class="content">
-                        <p>
-                            I put the batteries we got into our UPSs and set
-                            them up in the server racks. Now our backup power
-                            on the hill campus is much more reliable.
-                        </p>
-                    </div>
-                </article>
-            </div>
         </section>    
     </main>
 
@@ -576,7 +170,7 @@
             </ul>
             <section id="copyright" class="footer_info">
                 <h3>Juno Meifert</h3>
-                MP451 for 3 Credits &bull; Fall 2024
+                MP451 for 3 Credits &bull; Spring 2025
                 <br>
                 Clarkson University
             </section>
